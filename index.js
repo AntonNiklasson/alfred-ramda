@@ -1,10 +1,10 @@
-'use strict';
-
 const alfy = require('alfy');
+const cheerio = require('cheerio')
 
-alfy.output([
-	{
-		title: 'Unicorn',
-		subtitle: alfy.input
-	}
-]);
+
+async (() => {
+	const response = await alfy.fetch('https://ramdajs.com/docs/')
+
+	$ = cheerio.load(response.body)
+	alfy.log($.html())
+})()
