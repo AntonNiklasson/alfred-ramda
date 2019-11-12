@@ -1,0 +1,38 @@
+{
+  "name": "alfred-ramda",
+  "version": "0.0.0",
+  "description": "Search the ramda docs with Alfred",
+  "license": "MIT",
+  "repository": "AntonNiklasson/alfred-ramda",
+  "author": {
+    "name": "Anton Niklasson",
+    "email": "anton.niklasson@klarna.com",
+    "url": "antn.se"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "echo \"lol\"",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.18.0",
+    "xo": "^0.17.0"
+  }
+}
