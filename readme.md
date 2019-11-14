@@ -2,12 +2,6 @@
 
 > Search Ramda docs with Alfred
 
-## Install
-
-```
-$ npm install --global alfred-ramda
-```
-
 _Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/)._
 
 ## Usage
