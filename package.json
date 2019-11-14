@@ -29,6 +29,7 @@
   ],
   "dependencies": {
     "alfy": "^0.6.0",
+    "cheerio": "^1.0.0-rc.3",
     "eslint": "^6.6.0"
   },
   "devDependencies": {
