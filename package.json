@@ -1,6 +1,6 @@
 {
   "name": "alfred-ramda",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Search the ramda docs with Alfred",
   "license": "MIT",
   "repository": "AntonNiklasson/alfred-ramda",
