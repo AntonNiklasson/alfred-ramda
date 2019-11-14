@@ -2,12 +2,10 @@ const alfy = require("alfy");
 const cheerio = require("cheerio");
 
 (async () => {
-  const response = await alfy.fetch("https://ramdajs.com/docs/", {
+  const response = await alfy.fetch("https://ramdajs.com/docs", {
     json: false
   });
   const $ = cheerio.load(response.match(/<body[^>]*>((.|[\n\r])*)<\/body>/)[0]);
-
-  alfy.log($.html());
 
   let items = [];
 
@@ -20,7 +18,17 @@ const cheerio = require("cheerio");
     );
   });
 
-  alfy.log(items);
+  alfy.output(
+    items
+      .filter(item => item.includes(alfy.input))
+      .map(item => {
+        const url = `https://ramdajs.com/docs#${item}`;
 
-  alfy.output(items);
+        return {
+          title: item,
+          arg: url,
+          quicklookurl: url
+        };
+      })
+  );
 })();
