@@ -20,7 +20,7 @@ const cheerio = require("cheerio");
 
   alfy.output(
     items
-      .filter(item => item.includes(alfy.input))
+      .filter(item => item.toLowerCase().includes(alfy.input.toLowerCase()))
       .map(item => {
         const url = `https://ramdajs.com/docs#${item}`;
 

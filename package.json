@@ -6,7 +6,7 @@
   "repository": "AntonNiklasson/alfred-ramda",
   "author": {
     "name": "Anton Niklasson",
-    "email": "anton.niklasson@klarna.com",
+    "email": "niklasson.anton@gmail.com",
     "url": "antn.se"
   },
   "engines": {
@@ -28,15 +28,10 @@
     "alfy"
   ],
   "dependencies": {
-    "alfy": "^0.6.0",
+    "alfy": "^0.9.0",
     "babel-eslint": "^10.0.3",
     "cheerio": "^1.0.0-rc.3",
     "eslint": "^6.6.0",
     "prettier": "^1.19.1"
-  },
-  "devDependencies": {
-    "alfy-test": "^0.3.0",
-    "ava": "^0.18.0",
-    "xo": "^0.17.0"
   }
 }
